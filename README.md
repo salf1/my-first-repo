@@ -14,3 +14,5 @@ This a personal project for learning purposes (),,,
 "Show Image"
 
 "## Contributing"
+
+See CODE_OF_CONDUCT.md
