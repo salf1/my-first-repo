@@ -26,3 +26,4 @@ roma.matveenko.99@mail.ru
 
 #<img width="136" height="123" alt="image" src="https://github.com/user-attachments/assets/5e9a2a89-5e3f-41b1-bc03-70ac90a9247f" />
 # Screenshot
+## Acknowledgments
