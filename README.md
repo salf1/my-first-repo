@@ -16,3 +16,5 @@ This a personal project for learning purposes (),,,
 "## Contributing"
 
 See CODE_OF_CONDUCT.md
+
+roma.matveenko.99@mail.ru
