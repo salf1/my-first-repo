@@ -91,3 +91,14 @@ rl.question("Введите первое число: ", (a) => {
     });
   });
 });
+function calculate(a, op, b) {
+  switch (op) {
+    case '+': return a + b;
+    case '-': return a - b;
+    case '*': return a * b;
+    case '/':
+      if (b === 0) return "Ошибка: деление на ноль";
+      return a / b;
+    default: return "Неизвестный оператор";
+  }
+}
