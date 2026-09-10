@@ -54,3 +54,12 @@ rl.question("Введите первое число: ", (a) => {
     });
   });
 });
+function calculate(a, op, b) {
+  switch (op) {
+    case '+': return a + b;
+    case '-': return a - b;
+    case '*': return a * b;
+    case '/': return a / b;
+    default: return null;
+  }
+}
