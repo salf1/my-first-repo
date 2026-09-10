@@ -5,7 +5,7 @@ Hello, this is my first commit
 
 ## Requirements
 
-This a personal project for learning purposes (),,,
+This personal project for learning purposes (),,,
 
 #https://incrypted.com/en/news/# Installation 
 
