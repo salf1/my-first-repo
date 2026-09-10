@@ -102,3 +102,21 @@ function calculate(a, op, b) {
     default: return "Неизвестный оператор";
   }
 }
+rl.question("Введите первое число: ", (a) => {
+  rl.question("Введите оператор (+, -, *, /): ", (op) => {
+    rl.question("Введите второе число: ", (b) => {
+      const numA = parseFloat(a);
+      const numB = parseFloat(b);
+
+      if (isNaN(numA) || isNaN(numB)) {
+        console.log("Ошибка: введите корректные числа");
+        rl.close();
+        return;
+      }
+
+      const result = calculate(numA, op, numB);
+      console.log(`Результат: ${result}`);
+      rl.close();
+    });
+  });
+});
