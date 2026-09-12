@@ -16,7 +16,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-console.log("Добро пожаловать в калькулятор!");
+console.log("Добро пожаловать в калькулятор");
 
 rl.question("Введите первое число: ", (a) => {
   console.log(`Вы ввели: ${a}`);
