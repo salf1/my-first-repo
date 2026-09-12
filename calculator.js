@@ -29,7 +29,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-console.log("Добро пожаловать в калькулятор!");
+console.log("Добро пожаловать в калькулятор");
 
 rl.question("Введите первое число: ", (a) => {
   rl.question("Введите оператор (+, -, *, /): ", (op) => {
