@@ -1,4 +1,4 @@
-console.log("Добро пожаловать в калькулятор");
+console.log("Добро пожаловать");
 
 const readline = require('readline');
 
