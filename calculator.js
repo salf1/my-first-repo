@@ -44,7 +44,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-console.log("Добро пожаловать в");
+console.log("Добро");
 
 rl.question("Введите первое число: ", (a) => {
   rl.question("Введите оператор (+, -, *, /): ", (op) => {
