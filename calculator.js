@@ -80,7 +80,7 @@ function calculate(a, op, b) {
   }
 }
 
-console.log("Добро пожаловать");
+console.log("Добро");
 
 rl.question("Введите первое число: ", (a) => {
   rl.question("Введите оператор (+, -, *, /): ", (op) => {
