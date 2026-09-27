@@ -23,3 +23,15 @@ if result is None:
     print(f"Ошибка: валюта {currency} не поддерживается")
 else:
     print(f"{amount} {currency} = {result} USD")
+
+import requests
+
+def get_live_rate(currency):
+    ids = {"BTC": "bitcoin", "ETH": "ethereum", "USDT": "tether"}
+    coin_id = ids.get(currency)
+    if not coin_id:
+        return None
+    url = f"https://api.coingecko.com/api/v3/simple/price?ids={coin_id}&vs_currencies=usd"
+    response = requests.get(url)
+    data = response.json()
+    return data[coin_id]["usd"]
