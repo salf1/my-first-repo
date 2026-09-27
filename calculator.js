@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-console.log("Добро");
+console.log("Добро в ");
 
 const readline = require('readline');
 
