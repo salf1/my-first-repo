@@ -35,3 +35,16 @@ def get_live_rate(currency):
     response = requests.get(url)
     data = response.json()
     return data[coin_id]["usd"]
+
+print("Добро пожаловать в конвертер криптовалют!")
+
+amount = float(input("Введите сумму: "))
+currency = input("Введите валюту (BTC, ETH, USDT): ").upper()
+
+rate = get_live_rate(currency)
+
+if rate is None:
+    print(f"Ошибка: валюта {currency} не поддерживается")
+else:
+    result = amount * rate
+    print(f"{amount} {currency} = {result:.2f} USD (курс: {rate})")
