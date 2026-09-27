@@ -13,3 +13,9 @@ def convert_to_usd(amount, currency, rates):
     if currency not in rates:
         return None
     return amount * rates[currency]
+
+amount = float(input("Введите сумму: "))
+currency = input("Введите валюту (BTC, ETH, USDT): ").upper()
+
+result = convert_to_usd(amount, currency, rates)
+print(f"{amount} {currency} = {result} USD")
