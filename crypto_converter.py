@@ -8,3 +8,8 @@ rates = {
 
 amount = float(input("Введите сумму: "))
 currency = input("Введите валюту (BTC, ETH, USDT): ").upper()
+
+def convert_to_usd(amount, currency, rates):
+    if currency not in rates:
+        return None
+    return amount * rates[currency]
