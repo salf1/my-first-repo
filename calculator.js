@@ -1,4 +1,4 @@
-console.log("Добро пожаловать d ");
+console.log("Добро");
 
 const readline = require('readline');
 
