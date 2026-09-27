@@ -48,3 +48,17 @@ if rate is None:
 else:
     result = amount * rate
     print(f"{amount} {currency} = {result:.2f} USD (курс: {rate})")
+
+def get_live_rate(currency):
+    ids = {"BTC": "bitcoin", "ETH": "ethereum", "USDT": "tether"}
+    coin_id = ids.get(currency)
+    if not coin_id:
+        return None
+    try:
+        url = f"https://api.coingecko.com/api/v3/simple/price?ids={coin_id}&vs_currencies=usd"
+        response = requests.get(url, timeout=5)
+        data = response.json()
+        return data[coin_id]["usd"]
+    except requests.exceptions.RequestException:
+        print("Ошибка сети: не удалось получить курс")
+        return None
